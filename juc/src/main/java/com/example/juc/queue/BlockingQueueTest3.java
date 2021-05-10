@@ -11,9 +11,14 @@ public class BlockingQueueTest3 {
         BlockingQueue<Integer> blockingQueue=new ArrayBlockingQueue(3);
 
         blockingQueue.put(1);
-        blockingQueue.put(1);
-        blockingQueue.put(1);
-        blockingQueue.take();
+        blockingQueue.put(2);
+        blockingQueue.put(3);
+      //  blockingQueue.put(4);  队列不够 阻塞
+
+        System.out.println(blockingQueue.take());
+        System.out.println(blockingQueue.take());
+        System.out.println(blockingQueue.take());
+        System.out.println(blockingQueue.take());
 
 
     }

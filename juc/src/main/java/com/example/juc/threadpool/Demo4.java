@@ -4,12 +4,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-public class Demo2 {
+public class Demo4 {
     public static void main(String[] args) {
-       ExecutorService executorService= Executors.newFixedThreadPool(5);
 
 
-        for (int i = 0; i < 10; i++) {
+        ExecutorService executorService= Executors.newScheduledThreadPool(3);
+
+        for (int i = 0; i < 5; i++) {
             executorService.execute(()->{
                 System.out.println(Thread.currentThread().getName());
             });

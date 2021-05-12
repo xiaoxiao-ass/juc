@@ -15,5 +15,7 @@ public class Demo1 {
                 System.out.println(Thread.currentThread().getName());
             });
         }
+
+        executorService.shutdown();
     }
 }

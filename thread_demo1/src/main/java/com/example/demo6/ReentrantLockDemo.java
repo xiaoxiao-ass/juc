@@ -1,6 +1,8 @@
 package com.example.demo6;
 
 
+import lombok.Data;
+
 import java.util.concurrent.locks.ReentrantLock;
 
 //买票 使用reentrantLock

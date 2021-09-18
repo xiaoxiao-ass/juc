@@ -24,8 +24,8 @@ public class Test4  {
         }
 
         new Thread(()->{
-            phone2.call();
-           // phone1.call();
+           phone2.call();
+            //phone1.call();
         },"B").start();
     }
 }
@@ -35,6 +35,7 @@ class Phone4{
 
     // 静态的同步方法 锁的是 Class 类模板
     public static synchronized void sendSms(){
+        System.out.println(Thread.currentThread().getName());
         try {
             TimeUnit.SECONDS.sleep(4);
         } catch (InterruptedException e) {

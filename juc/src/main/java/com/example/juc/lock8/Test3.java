@@ -19,8 +19,8 @@ public class Test3 {
         e.printStackTrace();
     }new Thread(()->{
         phone2.call();
-        //phone1.sendSms();
-            },"B").start();
+        //phone1.call();
+        },"B").start();
 }
 
 }
